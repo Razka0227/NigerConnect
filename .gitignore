@@ -1,0 +1,28 @@
+﻿# Node
+node_modules/
+dist/
+*.log
+
+# Prisma / SQLite
+server/prisma/dev.db
+server/prisma/dev.db-journal
+*.sqlite
+*.db
+
+# Angular
+client/.angular/
+client/.angular/cache/
+
+# Env
+.env.local
+.env.production
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+
+# Secrets (ajout F.society)
+.env

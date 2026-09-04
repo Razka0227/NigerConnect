@@ -1,0 +1,24 @@
+{
+  "name": "nigerconnect",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Niger Connect — super-app locale nigérienne (messagerie, annonces, transport, paiement, actualités). Offline-first, low-data.",
+  "workspaces": [
+    "server"
+  ],
+  "scripts": {
+    "install:all": "npm install --workspace server && npm install --prefix client",
+    "db:setup": "npm run prisma:push --workspace server && npm run seed --workspace server",
+    "server": "npm run dev --workspace server",
+    "client": "npm run start --prefix client",
+    "build": "npm run build --prefix client",
+    "seed": "npm run seed --workspace server",
+    "e2e": "node scripts/e2e.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.8.3"
+  }
+}

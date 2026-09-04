@@ -1,0 +1,8 @@
+{
+  "name": "NigerConnect API",
+  "version": "0.1.0",
+  "description": "API docs for Niger Connect backend",
+  "author": "Niger Connect Team",
+  "license": "UNLICENSED",
+  "private": true
+}
